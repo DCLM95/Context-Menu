@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "description": "A context menu to improve the DCR efficiency",
+  "version": "1.0",
+  "name": "Flash",
+  "permissions": ["contextMenus", "activeTab", "scripting"],
+  "icons": {
+    "16": "images/fast.png",
+    "48": "images/fast.png",
+    "128": "images/fast.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Flash",
+    "default_popup": "popup.html"
+  }
+}
